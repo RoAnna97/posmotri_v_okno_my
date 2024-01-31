@@ -44,7 +44,7 @@ ol {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
   gap: 30px;
   width: 1140px;
 }
@@ -70,7 +70,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-
 }
 
 .result{
@@ -103,7 +102,12 @@ video.result__video {
 }
 
 .content__video-card:hover {
-  text-underline-offset: 3px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.content__video-card:active {
+  background-color: #545050;
 }
 
 .content__video-card:focus-visible {
